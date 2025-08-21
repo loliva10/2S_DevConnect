@@ -1,0 +1,53 @@
+/* usamos o root para criar as nossas variáveis */
+:root {
+    --cor-preto: #000;
+    --cor-cinza: #e0e0e0;
+    --cor-branco: #fff;
+    --cor-rosa: #7a0068;
+    --cor-roxo-escuro: #650158;
+
+    --borda: 4px solid var(--cor-rosa);
+    --borda-arredondada: 2px solid var(--cor-rosa);
+
+    --tamanho-fonte-lg: 64px;
+    --tamanho-fonte-md: 48px;
+    --tamanho-fonte-sm: 40px;
+    --tamanho-fonte-sm2: 20px;
+    --tamanho-fonte-sm3: 15px;
+}
+
+@font-face {
+    font-family: WonderBrush;
+    src: url(../fonts/WonderBrush-Font/License.txt);
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url(../fonts/SegoeUI-Font/segoeuithibd.ttf);
+}
+
+/* seletor global */
+* {
+    font-family: "Segoe UI", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e borda */
+}
+
+body {
+    background-color: var(--cor-cinza);
+}
+
+h1 {
+    position: absolute; /* altera a posição do elemento */
+    z-index: -1; /* camadas do elemento */
+    opacity: 0; 
+}
+
+/* formulário */
+input {
+    width: 100%;
+    height: 35px;
+    border: var(--borda-arredondada);
+    background-color: var(--cor-branco);
+}
