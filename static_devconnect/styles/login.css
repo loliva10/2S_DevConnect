@@ -1,33 +1,39 @@
 main {
     width: 100%;
     min-height: 100vh; /* altura da janela do meu dispositivo */
-    background-color: #e0e0e0;
     display: flex;
     justify-content: center; /* alinha no sentido contrário do flex*/ 
     align-items: center; /* alinha no sentido do flex*/
 }
 
 main > div {
-    background-color: #fff;
-    width: 50%;
-    height: 500px;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    gap: 15px;
     flex-direction: column;
     align-items: center;
-
 }
 
 /* formulário */
 #formulario {
-    height: 300px;
+    /*height: 300px;*/
    /*background-color: #fff;*/
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+   /*justify-content: space-between;*/
+   padding:3%;
 }
 
 #secao-cadastro {
-    width: 100px;
-    height: 100px;
+    /*width: 100px;*/
+    height: 60px;
     /*background-color: #fff;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .estilo-formulario {
@@ -37,10 +43,42 @@ main > div {
     background-color: var(--cor-branco);
 }
 
+#formulario > div {
+    border: var(--borda);
+    border-radius: var(--borda-arredondada);
+    width: 100%;
+}
+
+#formulario > div > label {
+    font-size: var(--tamanho-fonte-sm3);
+    color: var(--cor-cinza);
+    font-weight: 500; /* aumenta ou diminui a expessura da fonte */
+    padding-bottom: 4px;
+}
+
+.formulario-botao-roxo {
+    width: 100%;
+}
+
+#formulario > p {
+    text-transform: uppercase; /* transformamos em maiusculo */
+    font-size: var(--tamanho-fonte-sm3);
+    color: var(--cor-cinza);
+}
+
+#formulario > a, #secao-cadastro > p > a {
+    text-decoration: none;
+    color: var(--cor-rosa);
+}
+
+#secao-cadastro > p {
+    font-size: var(--tamanho-fonte-sm3);
+}
+
 .informacao-aplicativo {
     /*background-color: #e0e0e0;*/
     font-size: var(--tamanho-fonte-sm3);
-    color: var(--cor-rosa);
+    color: var(--cor-preto);
     font-weight: 400;
 }
 

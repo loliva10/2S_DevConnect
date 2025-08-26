@@ -7,7 +7,7 @@
     --cor-roxo-escuro: #650158;
 
     --borda: 4px solid var(--cor-rosa);
-    --borda-arredondada: 2px solid var(--cor-rosa);
+    --borda-arredondada: 2px;
 
     --tamanho-fonte-lg: 64px;
     --tamanho-fonte-md: 48px;
@@ -35,7 +35,7 @@
 }
 
 body {
-    background-color: var(--cor-cinza);
+    background-color: var(--cor-branco);
 }
 
 h1 {
@@ -50,4 +50,15 @@ input {
     height: 35px;
     border: var(--borda-arredondada);
     background-color: var(--cor-branco);
+}
+
+.formulario-botao-roxo {
+    background-color: #7a0068;
+    border-radius: var(--borda-arredondada); /* arredonda o canto dos elementos */
+    border: none; /* removendo a borda */
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm3);
+    font-weight: 400;
 }

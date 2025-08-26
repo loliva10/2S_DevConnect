@@ -1,0 +1,81 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    /* altura da janela do meu dispositivo */
+    display: flex;
+    justify-content: center;
+    /* alinha no sentido contrário do flex*/
+    align-items: center;
+    /* alinha no sentido do flex*/
+}
+
+main>div {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* formulário */
+#formulario {
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 3%;
+}
+
+#secao-login {
+    margin-top: 15px;
+    text-align: center;
+    max-width: 380px;
+    width: 100%;
+    border: var(--borda);
+    border-radius: var(--borda-arredondada);
+    padding: 15px;
+    background: var(--cor-branco);
+}
+
+.estilo-formulario {
+    border: var(--borda);
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--cor-branco);
+}
+
+#formulario>div {
+    display: flex;
+    border: var(--borda);
+    border-radius: var(--borda-arredondada);
+    width: 100%;
+}
+
+#formulario>div>label {
+    font-size: var(--tamanho-fonte-sm3);
+    color: var(--cor-cinza);
+    font-weight: 500;
+    /* aumenta ou diminui a expessura da fonte */
+    padding: 4px;
+}
+
+.formulario-botao-roxo {
+    width: 100%;
+}
+
+#formulario>p {
+    text-align: center;
+    font-size: var(--tamanho-fonte-sm3);
+    color: var(--cor-cinza);
+}
+
+#secao-login>p>a {
+    text-decoration: none;
+    color: var(--cor-rosa);
+}
+
+#secao-login>p {
+    font-size: var(--tamanho-fonte-sm3);
+}

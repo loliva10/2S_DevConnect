@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Oliva">
+    <meta name="description" content="Site da empresa DevConnect">
+
+    <title>Tela-Cadastro DevConnect</title>
+
+    <link rel="shortcut icon" href="../images/logo-devconnect-default.svg">
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" href="../pages/index.html">
+
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <main>
+        <div>
+            <form id="formulario" class="estilo-formulario">
+                <!-- Logo -->
+                <img src="../images/logo-devconnect-default.svg" alt="Logo DevConnect">
+
+                <p>Cadastre-se para comunidade exclusiva de desenvolvedores(as). </p>
+
+                <!-- Campos -->
+                <div>
+                    <label for=""></label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome e sobrenome">
+                </div>
+
+                <div>
+                    <label for=""></label>
+                    <input type="text" name="" id="usuario" placeholder="Nome de usuário">
+                </div>
+
+                <div>
+                    <label for=""></label>
+                    <input type="email" name="" id="email" placeholder="E-mail">
+                </div>
+                <div>
+                    <label for=""></label>
+                    <input type="password" name="" id="senha" placeholder="Senha">
+                </div>
+
+                <div>
+                    <label for="campo-upload" class="botao-upload">
+                        Faça upload de sua imagem aqui...
+                    </label>
+                    <input type="file" id="campo-upload" style="display:none;">
+                </div>
+
+                <button type="submit" class="formulario-botao-roxo">Cadastre-se</button>
+
+                <p>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies. </p>
+            </form>
+            <section id="secao-login">
+                <p>Já tem uma conta? <a href="../pages/index.html">Faça login</a></p>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
