@@ -1,0 +1,21 @@
+main {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+header img:first-child {
+    height: 40px; /* ajusta a altura desejada da logo */
+}
+
+#navegacao-cabecalho {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+

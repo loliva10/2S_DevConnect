@@ -35,12 +35,24 @@ main>div {
     width: 100%;
     border: var(--borda);
     border-radius: var(--borda-arredondada);
+    border-image: linear-gradient(
+        82deg,
+        rgba(122, 0, 104, 1) 0%,
+        rgba(122, 0, 104, 1) 42%,
+        rgba(223, 0, 190, 1) 100%
+    ) 1;
     padding: 15px;
     background: var(--cor-branco);
 }
 
 .estilo-formulario {
     border: var(--borda);
+    border-image: linear-gradient(
+        82deg,
+        rgba(122, 0, 104, 1) 0%,
+        rgba(122, 0, 104, 1) 42%,
+        rgba(223, 0, 190, 1) 100%
+    ) 1;
     width: 100%;
     max-width: 340px;
     background-color: var(--cor-branco);
@@ -50,15 +62,13 @@ main>div {
     display: flex;
     border: var(--borda);
     border-radius: var(--borda-arredondada);
+    border-image: linear-gradient(
+        82deg,
+        rgba(122, 0, 104, 1) 0%,
+        rgba(122, 0, 104, 1) 42%,
+        rgba(223, 0, 190, 1) 100%
+    ) 1;
     width: 100%;
-}
-
-#formulario>div>label {
-    font-size: var(--tamanho-fonte-sm3);
-    color: var(--cor-cinza);
-    font-weight: 500;
-    /* aumenta ou diminui a expessura da fonte */
-    padding: 4px;
 }
 
 .formulario-botao-roxo {

@@ -1,0 +1,90 @@
+main {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.container-flex-publi {
+  background-color: rgb(0, 0, 0);
+  width: 90%;
+  max-width: 1000px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#secao-storys {
+  /* background-color: aqua;
+  width: 100%; */
+  /* height: 60px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px;
+  overflow-x: scroll; /* poe o scroll no eixo x */
+}
+
+#secao-storys::-webkit-scrollbar {
+  width: 0;
+}
+
+.card-story {
+  /* width: 100%;
+  max-width: 100px;
+  background-color: brown; */
+}
+
+.card-story>a {
+  /*background-color: chartreuse;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+
+.card-story>a>img {
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-story>a>span {
+  color: var(--cor-preto);
+  font-size: var(--tamanho-fonte-sm3);
+  text-transform: lowercase;
+}
+
+/* seção criar publi */
+#cadastro-publi {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 3%;
+}
+
+#cadastro-publi > h2 {
+  font-size: var(--tamanho-fonte-sm1);
+  color: var(--cor-preto);
+  font-weight: 700;
+}
+
+#cadastro-publi > form > textarea {
+  width: 100%;
+  height: 80px;
+  background: var(--cor-cinza);
+  resize: none; /* desabilita a opção de redimensionar */
+  padding: 10px;
+  color: var(--cor-preto);
+  font-size: var(--tamanho-fonte-sm3);
+  outline: none;
+}
