@@ -32,7 +32,9 @@
     font-family: "Segoe UI", sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e borda */
+    box-sizing: border-box;
+    /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e borda */
+    outline-color: var(--cor-preto);
 }
 
 body {
@@ -49,12 +51,10 @@ h1 {
 
 .estilo-formulario {
     border: var(--borda);
-    border-image: linear-gradient(
-        82deg,
-        rgba(122, 0, 104, 1) 0%,
-        rgba(122, 0, 104, 1) 42%,
-        rgba(223, 0, 190, 1) 100%
-    ) 1;
+    border-image: linear-gradient(82deg,
+            rgba(122, 0, 104, 1) 0%,
+            rgba(122, 0, 104, 1) 42%,
+            rgba(223, 0, 190, 1) 100%) 1;
     width: 100%;
     background-color: var(--cor-branco);
 }
@@ -71,23 +71,37 @@ input {
     border-radius: var(--borda-arredondada); /* arredonda o canto dos elementos */
     border: none; /* removendo a borda */
     height: 35px;
-
     color: var(--cor-branco);
     font-size: var(--tamanho-fonte-sm3);
     font-weight: 400;
 }
 
 .botao-upload {
+    width: 100%;
+    background-color: var(--cor-cinza);
+    padding: 5px;
     font-size: var(--tamanho-fonte-sm3);
-    color: var(--cor-cinza);
+    color: var(--cor-preto);
+    cursor: pointer;
     font-weight: 500;
-    background-color: var(--cor-rosa);
-    /* aumenta ou diminui a expessura da fonte */
-    /* padding: 4px; */
+    border-radius: 4px;
 }
 
-#campo-upload{
- display: none;
+#campo-upload {
+    display: none;
+}
+
+#texto-upload {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    min-height: 35px;
+    padding: 5px;
+    background-color: var(--cor-preto);
+    color: var(--cor-cinza);
+    text-align: center;
+    font-weight: 500;
+    border-radius: var(--borda-arredondada);
 }
 
 /* cabeçalho - HEADER */
@@ -98,17 +112,16 @@ input {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    border-bottom: 5px solid; /* espessura da borda */
-    border-image: linear-gradient(
-        82deg,
-        rgba(122, 0, 104, 1) 0%,
-        rgba(122, 0, 104, 1) 35%,
-        rgba(223, 0, 190, 1) 100%
-    ) 1;
+    border-bottom: 5px solid;
+    /* espessura da borda */
+    border-image: linear-gradient(82deg,
+            rgba(122, 0, 104, 1) 0%,
+            rgba(122, 0, 104, 1) 35%,
+            rgba(223, 0, 190, 1) 100%) 1;
 }
 
 
-#cabecalho > nav {
+#cabecalho>nav {
     background-color: #ffffff;
     width: 85%;
     max-width: 1440px;
@@ -119,25 +132,27 @@ input {
 }
 
 #logo-mobile {
-    display: none; /* remove */
+    display: none;
+    /* remove */
 }
 
 .cabecalho-acoes {
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.cabecalho-acoes > a {
+.cabecalho-acoes>a {
     display: flex;
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
-    object-fit: cover; /* redimensiona a foto */
+    object-fit: cover;
+    /* redimensiona a foto */
     object-position: center;
     border-radius: 50%;
 }
@@ -146,8 +161,10 @@ input {
 /* RESPONSIVO */
 @media only screen and (max-width: 485px) {
     #logo-mobile {
-        display: initial; /* Volta o valor inicial da exibição */
+        display: initial;
+        /* Volta o valor inicial da exibição */
     }
+
     #logo-desktop {
         display: none;
     }

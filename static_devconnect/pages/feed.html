@@ -39,7 +39,7 @@
                         height="31">
                 </a>
                 <a href="./pefil.html">
-                    <img id="foto-perfil" src="../images/imagem-de-perfil.jpg" alt="Foto de perfil">
+                    <img class="foto-perfil" src="../images/imagem-de-perfil.jpg" alt="Foto de perfil">
                 </a>
             </div>
         </nav>
@@ -125,7 +125,7 @@
                 </article>
                 <article class="card-story">
                     <a href="#">
-                        <img src="../images/igao.jpg" alt="">
+                        <img src="../images/igao.png" alt="">
                         <span>igaopalacio0</span>
                     </a>
                 </article>
@@ -143,18 +143,56 @@
                 <h2>Publicação</h2>
 
                 <form action="">
-                    <textarea name="" id=""></textarea>
+                    <textarea name="" id="" placeholder="Digite a descrição do post..."></textarea>
 
-                    <div>
+                    <footer>
                         <div>
-                            <label for="campo-upload" class="botao-upload">
-                                Faça upload de sua imagem aqui...
+                            <label for="campo-upload" class="botao-upload-publi">
+                                Faça o seu upload aqui...
                             </label>
                             <input type="file" id="campo-upload" style="display:none;">
                         </div>
-                        <button type="submit" class="formulario-botao-roxo">Entrar</button>
-                    </div>
+                        <button type="submit" class="formulario-botao-roxo">Postar</button>
+                    </footer>
                 </form>
+            </section>
+
+            <section id="publicacoes">
+                <!-- Inicio CARD PUBLICAÇÃO -->
+                <article class="card-publi">
+                        <header>
+                            <a href="#">
+                                <img class="foto-perfil" src="../images/imagem-de-perfil.jpg" alt="">
+                                <span>negotrufa00</span>
+                                <img src="../images/icone-verificado-azul-pequeno.svg" alt="">
+                            </a>
+                        </header>
+
+                        <figure>
+                            <img class="imagem-publicacao" src="../images/negotrufa00.jpg" alt="">
+
+                            <figcaption class="descricao-publicacao">
+                                negotrufa00
+                                <p>Só quem se arrisca vive o extraordinário🥷🤴!</p>
+                            </figcaption>
+
+                            <div class="interacoes-publicacao">
+                                <button>
+                                    <img src="../images/icone-coracao-rosa-pequeno.svg" alt="">
+                                    <span>1,5 M</span>
+                                </button>
+
+                                <button>
+                                    <img src="../images/icone-comentario-rosa-pequeno.svg" alt="">
+                                    <span>200 Mil</span>
+                                </button>
+
+                            </div>
+                        </figure>
+
+                        <button>Ver mais comentários</button>
+                    </article>
+                    <!-- Fim CARD PUBLICAÇÃO -->
             </section>
         </div>
     </main>
