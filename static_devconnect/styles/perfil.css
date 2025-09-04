@@ -1,16 +1,39 @@
 main {
-
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* deixa bio em cima e posts embaixo */
+  align-items: center;
+  /* centraliza horizontalmente */
+  gap: 30px;
+  /* espaço entre bio e publicações */
+  padding: 20px;
+  
 }
 
+main>div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  /* espaço entre a foto e as infos */
+  /* limite para não esticar demais */
+  width: 100%;
+}
+.container-flex-publi {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Cabeçalho do perfil */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 10px;
-}
-
-header img:first-child {
-    height: 40px; /* ajusta a altura desejada da logo */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
 }
 
 #navegacao-cabecalho {
@@ -19,3 +42,194 @@ header img:first-child {
   gap: 15px;
 }
 
+/* Seção Bio do perfil */
+.bio {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  /* centraliza o texto */
+  border-bottom: 4px solid #d600d6;
+  padding-bottom: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Foto com borda degradê estilo Instagram */
+.foto-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 5px;  background: linear-gradient(45deg, #7A0068, #E000BF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-perfil-2 {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Nome de usuário */
+.nome-user {
+  font-size: var(--tamanho-fonte-sm2);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Informações seguidores */
+#infos-seguidores {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+#infos-seguidores>p {
+  margin: 0;
+  font-size: var(--tamanho-fonte-sm2);
+  font-weight: 400;
+}
+
+/* Botões editar e sair */
+#editar-sair-perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bio-acoes {
+  display: flex;
+  gap: 15px;
+  /* espaço entre "Editar perfil" e "Sair" */
+}
+
+#editar-sair-perfil a {
+  text-decoration: none;
+  font-size: var(--tamanho-fonte-sm2);
+  font-weight: 500;
+  color: #0095f6;
+}
+
+#editar-sair-perfil a:hover {
+  text-decoration: underline;
+}
+
+/* Ícone Publicações */
+.icone-publi {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icone-publi>span{
+  font-size: var(--tamanho-fonte-sm1);
+  font-weight: 670;
+}
+
+/* Publicações */
+#publicacoes {
+  width: 100%;
+  /* controla a largura */
+  margin: 0 auto;
+  /* centraliza no meio */
+}
+
+.card-publi {
+  width: 100%;
+  background-color: var(--cor-branco);
+}
+
+.card-publi>header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(82deg,
+      rgba(122, 0, 104, 1) 0%,
+      rgba(122, 0, 104, 1) 35%,
+      rgba(223, 0, 190, 1) 100%) 1;
+}
+
+.card-publi>header>a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cor-preto);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.card-publi>figure {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-publicacao {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 680px;
+}
+
+.descricao-publicacao {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--tamanho-fonte-sm1);
+  font-weight: 500;
+  padding: 0 3%;
+  order: 2;
+  /* muda a ordem de exibição do */
+  flex-wrap: wrap;
+}
+
+.descricao-publicacao>p {
+  font-size: var(--tamanho-fonte-sm2);
+  font-weight: 400;
+}
+
+.interacoes-publicacao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 3%
+}
+
+.interacoes-publicacao>button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.interacoes-publicacao>button>img {
+  height: 40px;
+  width: 40px;
+}
+
+.interacoes-publicacao>button>span {
+  font-size: var(--tamanho-fonte-sm2);
+  font-weight: 700;
+  color: var(--cor-preto);
+}
+
+.card-publi>button {
+  margin: 15px 3%;
+  background-color: transparent;
+  border: none;
+  font-size: var(--tamanho-fonte-sm2);
+  font-weight: 470;
+  color: #c9c9c9;
+}
